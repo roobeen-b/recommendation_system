@@ -68,7 +68,6 @@ def data_set(url):
     data_set['Movie'] = pd.Series(title)
     data_set["Primary Genre"] = pd.Series(genres)
     data_set["Primary Genre"] = data_set["Primary Genre"].apply(check_repeated_comma)
-    print("hhhhhhhhhh",data_set["Primary Genre"])
     data_set['Secondary Genre'] = data_set['Secondary Genre'].fillna('To Be Filled')
     data_set['Tertiary Genre'] = data_set['Tertiary Genre'].fillna('To Be Filled')
     print(data_set)
